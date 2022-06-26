@@ -1,0 +1,6 @@
+{% extends "certificate.html" %}
+
+{% block doc %}
+<!-- <iframe src="/doc/miCV.pdf" frameborder="2"> -->
+<iframe src="{{url_for('static', filename='doc/miCV.pdf')}}" frameborder="2"> 
+{% endblock %}

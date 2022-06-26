@@ -39,7 +39,7 @@ views = Blueprint('views', __name__)
 views = Blueprint('views', __name__)
 
 
-@views.route('/home', methods=['GET'])
+@views.route('/', methods=['GET'])
 def home():
     return render_template("home.html")
 
@@ -47,6 +47,16 @@ def home():
 @views.route('/reto', methods=['GET'])    
 def reto():
     return render_template("reto.html")
+
+
+@views.route('/reto2', methods=['GET'])    
+def reto2():
+    return render_template("reto2.html")
+
+
+@views.route('/reto3', methods=['GET'])    
+def reto3():
+    return render_template("reto3.html")
 
 
 @views.route('/ranking', methods=['GET'])    
@@ -57,3 +67,38 @@ def ranking():
 @views.route('/answer', methods=['GET'])    
 def answer():
     return render_template("answer.html")
+
+# Nuevas rutas
+@views.route('/profile', methods=['GET'])    
+def profile():
+    return render_template("profile.html")
+
+
+@views.route('/cv', methods=['GET'])    
+def cv():
+    return render_template("cv.html")
+
+
+@views.route('/upload', methods=['GET'])    
+def upload():
+    return render_template("upload.html")
+
+
+@views.route('/logpro', methods=['GET'])    
+def logpro():
+    return render_template("logpro.html")
+
+
+@views.route('/logrec', methods=['GET'])    
+def logrec():
+    return render_template("logrec.html")
+
+
+@views.route('/iniciorec', methods=['GET'])    
+def iniciorec():
+    return render_template("iniciorec.html")
+
+
+@views.route('/general', methods=['GET'])    
+def general():
+    return render_template("general.html")

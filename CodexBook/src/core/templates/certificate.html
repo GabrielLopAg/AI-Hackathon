@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block title %} CodexBook {% endblock %}
+
+{% block navbar %}
+<nav class="navbar">
+    <a href="/profile">Mi perfil</a>
+</nav>
+{% endblock %}
+
+
+{% block content %}    
+<center>
+    {% block doc %}
+    <!-- <iframe src=" /doc/certificate.pdf " frameborder="2"> -->
+    <iframe src="{{url_for('static', filename='doc/certificate.pdf')}}" frameborder="2"> 
+
+    {% endblock %}
+    </iframe>
+</center>
+{% endblock %}

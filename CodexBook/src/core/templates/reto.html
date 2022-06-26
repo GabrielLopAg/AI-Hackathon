@@ -2,31 +2,24 @@
 {% block title %} CodexBook {% endblock %}
 
 {% block content %}
-
 <section class="reto" id="reto">
-    <div class="image">        
-        <img src="{{url_for('static', filename='img/code.jpg')}}" alt="">                                                
+    <div class="image">
+        <!-- <img src="img/code.jpg" alt=""> -->
+        <img src="{{url_for('static', filename='img/code.jpg')}}" alt=""> 
     </div>
     <form action="">
-        <h1 class="heading">Realiza tu prueba</h1>
+        <h1 class="heading">Slecciona lenguaje</h1>
         <div class="inputcaja">
             <select name="lenguaje">
                 <option selected="true" disabled="disabled">seleccione el lenguaje</option>
                 <option>JAVA</option> 
                 <option>JAVASCRIPT</option>
                 <option>PYTHON</option>
+                <option>C++</option>
             </select>
         </div>
-        <div class="inputcaja">
-            <input type="text" disabled>
-            <label for="">Realiza con condiciones if un detector de numeros palindromos de 3 digitos</label>
-        </div>
-        <div class="inputcaja">
-            <textarea required name="" id="" cols="30" rows="10"></textarea>
-            <label for="">Codigo</label>
-        </div>
         <div class="bottons">
-            <a href="/answer" class="btn"><i class="fa-solid fa-badge-check"></i>Enviar</a>
+            <a href="/reto2" class="btn"><i class="fa-solid fa-badge-check"></i>Siguiente</a>
         </div>
     </form>
 </section>

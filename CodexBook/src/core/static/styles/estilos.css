@@ -127,7 +127,9 @@ header label {
     width: 25vw;
     animation: float 3s linear infinite;
 }
-
+.inicio .image2 img{
+    width: 25vw;
+}
 @keyframes float {
     0%, 100%{
         transform: translateY(0rem);
@@ -148,11 +150,69 @@ header label {
     text-transform: uppercase;
 }
 
+.inicio .content  h4{
+    font-size: 3rem;
+    color: #333;
+    text-transform: uppercase;
+}
+
+.inicio .content h4 span{
+    color: var(--limon);
+    text-transform: uppercase;
+}
+
 .inicio .content p{
     font-size: 1.7rem;
     color: #666;
     padding: 1rem 0;
 }
+
+
+
+
+
+
+.inicio2{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    background: url(../img/gen.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.inicio2 .content  h3{
+    font-size: 5.5rem;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+}
+
+.inicio2 .content h3 span{
+    color: var(--limon);
+    text-transform: uppercase;
+}
+
+.inicio2 .content  h4{
+    font-size: 3rem;
+    color: #333;
+    text-transform: uppercase;
+}
+
+.inicio2 .content h4 span{
+    color: var(--limon);
+    text-transform: uppercase;
+}
+
+.inicio2 .content p{
+    font-size: 1.7rem;
+    color: #666;
+    padding: 1rem 0;
+}
+
+
+
+
 .informacion .caja-contenedor{
     display: flex; 
     align-items: center;
@@ -370,6 +430,11 @@ header label {
     transition: .2 linear;
 }
 
+iframe{
+    width: 50%;
+    height: 150vh;
+    position: relative;
+}
 
 @media(max-width:1200px) {
     html {
