@@ -1,0 +1,88 @@
+{% extends "base.html" %}
+{% block title %} CodexBook {% endblock %}
+
+{% block content %}
+<section class="reto" id="reto">
+    <div class="image">
+        <!-- <img src="img/cod.jpg" alt=""> -->
+        <img src="{{url_for('static', filename='img/cod.jpg')}}" alt=""> 
+    </div>
+    <form action="">
+        <h1 class="heading">Felicidades</h1>
+        <div class="inputcaja">
+            <input type="text" disabled>
+            <label for="">Alcanzaste un 86% en el dominio del lenguaje</label>
+        </div>
+        <section class="informacion" id="informacion">
+            <h1 class="heading">Estas empresas buscan personas con tus habilidades</h1>
+            <div class="caja-contenedor">
+                <div class="caja">
+                    <!-- <img src="img/face.png" alt=""> -->
+                    <img src="{{url_for('static', filename='img/face.png')}}" alt=""> 
+                    
+                    <h3>Facebook</h3>
+                    <h2>
+                    --92% de coincidencia--
+                    </h2>
+                    <p>artificial intelligence engineer</p>
+                    <p> Ubicacion: California, USA</p>
+                    <p> Sueldo: 10,000 USD</p>
+                    </p>
+                    <div href="#" class="btn">ENVIAR CV</div>
+                </div>
+                <div class="caja">
+                    <!-- <img src="img/google.png" alt=""> -->
+                    <img src="{{url_for('static', filename='img/google.png')}}" alt=""> 
+                    
+                    <h3>Google</h3>
+                    <h2>
+                        --89% de coincidencia--
+                    </h2>
+                    <p>computer engineer</p>
+                    <p> Ubicacion: California, USA</p>
+                    <p> Sueldo: 23,000 USD</p>
+                    </p>
+                    <div href="#" class="btn">ENVIAR CV</div>
+                </div>
+                <div class="caja">
+                    <!-- <img src="img/tesla.png" alt=""> -->
+                    <img src="{{url_for('static', filename='img/tesla.png')}}" alt=""> 
+
+                    <h3>Tesla</h3>
+                    <h2>
+                        --76% de coincidencia--
+                    </h2>
+                    <p>Telematics engineer</p>
+                    <p> Ubicacion: California, USA</p>
+                    <p> Sueldo: 33,000 USD</p>
+                    </p>
+                    <div href="#" class="btn">ENVIAR CV</div>
+                </div>
+            </div>
+        </section>
+    </form>
+</section>
+<section class="informacion" id="informacion">
+    <h1 class="heading">Tambien tenemos otras opciones para ti: </h1>
+    <div class="caja-contenedor">
+        <div class="caja">
+            <!-- <img src="img/programador.png" alt=""> -->
+            <img src="{{url_for('static', filename='img/programador.png')}}" alt=""> 
+
+            <h3>Artificial Intelligence Engineer</h3>
+            <p><a href="https://www.computrabajo.com.mx/ofertas-de-trabajo/oferta-de-trabajo-de-fullstack-net-developer-bilingue-140-k-libres-remoto-en-mexico-AFC4B9879DCEBC3B61373E686DCF3405">
+                    Mas informacion</a>
+            </p>
+            <h3>Computer Engineer</h3>
+            <p><a href="https://www.computrabajo.com.mx/ofertas-de-trabajo/oferta-de-trabajo-de-fullstack-net-developer-bilingue-140-k-libres-remoto-en-mexico-AFC4B9879DCEBC3B61373E686DCF3405">
+                    Mas informacion</a>
+            </p>
+            <h3>Telematics Engineer</h3>
+            <p><a href="https://www.computrabajo.com.mx/ofertas-de-trabajo/oferta-de-trabajo-de-fullstack-net-developer-bilingue-140-k-libres-remoto-en-mexico-AFC4B9879DCEBC3B61373E686DCF3405">
+                    Mas informacion</a>
+            </p>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

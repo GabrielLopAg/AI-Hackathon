@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+{% block title %} CodexBook {% endblock %}
+
+{% block nav %}
+<nav class="navbar">
+    <a href="/">inicio</a>
+    <a href="/profile">Mi perfil</a>
+</nav>
+{% endblock %}
+
+{% block content %}
+<section class="inicio" id="inicio">
+    <div class="content">
+        <h4>Bienvenido a CodexBook<span> mark zuckerberg</span></h4>
+        <p>
+            COMPUTER SCIENCE GRADUATE
+        </p>
+        <a href="/cv" class="btn">Ver mi CV</a>
+        <p></p>
+        <a href="/upload" class="btn"> Actualizar CV</a>
+    </div>
+    <div class="image2">
+    <!-- <img src="img/mark.png" alt=""> -->
+    <img src="{{url_for('static', filename='img/mark.png')}}" alt="">
+    </div>
+</section>
+<section class="informacion" id="informacion">
+    <h1 class="heading">Tus certificados</h1>
+    <div class="caja-contenedor">
+        <div class="caja">
+            <!-- <img src="img/java.png" alt=""> -->
+            <img src="{{url_for('static', filename='img/java.png')}}" alt="">
+            <h3>Obtuviste un 86% de calificacion en JAVA</h3>
+            <p>Programador semi senior
+            </p>
+            <div class="bottons">
+                <a href="/certificate" class="btn"><i class="fa-solid fa-code"></i> Ver certificado</a>
+            </div>
+        </div>
+        <div class="caja">
+            <!-- <img src="img/python.png" alt=""> -->
+            <img src="{{url_for('static', filename='img/python.png')}}" alt="">
+            <h3>Obtuviste un 93% de calificacion en PYTHON</h3>
+            <p>Programador senior
+            </p>
+            <div class="bottons">
+                <a href="/certificate" class="btn"><i class="fa-solid fa-code"></i> Ver certificado</a>
+            </div>
+        </div>
+        <div class="caja">
+            <!-- <img src="img/javascript.png" alt=""> -->
+            <img src="{{url_for('static', filename='img/javascript.png')}}" alt="">
+            <h3>Obtuviste un 72% de calificacion en JAVASCRIPT</h3>
+            <p>Programador semi senior
+            </p>
+            <div class="bottons">
+                <a href="/certificate" class="btn"><i class="fa-solid fa-code"></i> Ver certificado</a>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

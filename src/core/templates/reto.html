@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block title %} CodexBook {% endblock %}
+
+{% block content %}
+<section class="reto" id="reto">
+    <div class="image">
+        <!-- <img src="img/code.jpg" alt=""> -->
+        <img src="{{url_for('static', filename='img/code.jpg')}}" alt=""> 
+    </div>
+    <form action="">
+        <h1 class="heading">Slecciona lenguaje</h1>
+        <div class="inputcaja">
+            <select name="lenguaje">
+                <option selected="true" disabled="disabled">seleccione el lenguaje</option>
+                <option>JAVA</option> 
+                <option>JAVASCRIPT</option>
+                <option>PYTHON</option>
+                <option>C++</option>
+            </select>
+        </div>
+        <div class="bottons">
+            <a href="/reto2" class="btn"><i class="fa-solid fa-badge-check"></i>Siguiente</a>
+        </div>
+    </form>
+</section>
+{% endblock %}

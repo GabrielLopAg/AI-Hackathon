@@ -1,0 +1,128 @@
+{% extends "base.html" %}
+{% block title %} CodexBook {% endblock %}
+
+{% block navbar %} 
+<nav class="navbar">
+    <a href="/general">Cerrar sesion</a>
+</nav>   
+{% endblock %}
+
+{% block content %}
+<section class="ranking" id="ranking">
+    <h1 class="heading">----</h1>
+    <div class="columna">
+        <div class="image">
+            <!-- <img src="img/face.png" alt=""> -->
+            <img src="{{url_for('static', filename='img/face.png')}}" alt=""> 
+        </div>
+        <section class="reto" id="reto">
+            <form action="">
+                <h1 class="heading">Ingresa nueva vacante</h1>
+                <div class="inputcaja">
+                    <input type="text" required>
+                    <label for="">Nombre de la vacante</label>
+                </div>
+                <div class="inputcaja">
+                    <textarea required name="" id="" cols="30" rows="10"></textarea>
+                    <label for="">Lenguajes a usar</label>
+                </div>
+                <div class="inputcaja">
+                    <select name="" id="">
+                        <option selected="true" disabled="disabled">seleccione una especialidad</option>
+                        <option value="">Web</option>
+                        <option value="">IA</option>
+                        <option value="">Machine learning</option>
+                        <option value="">Data sience</option>
+                        <option value="">Mobile</option>
+                    </select>
+                </div>
+                <p></p>
+                <div class="inputcaja">
+                    <textarea required name="" id="" cols="30" rows="10"></textarea>
+                    <label for="">Habilidades requeridas</label>
+                </div>
+                <div class="inputcaja">
+                    <input type="number" id="tentacles" name="tentacles"
+                    min="5000" max="100000">
+                    <label for="">Sueldo</label>
+                </div>
+                <div class="bottons">
+                    <a href="/" class="btn"><i class="fa-solid fa-badge-check"></i>Subir</a>
+                </div>
+                
+            </form>
+            
+        </section>
+    </div>
+</section>
+<section class="prueba" id="prueba">
+    <h1 class="heading">vacantes activas</h1>
+    <div class="caja-contenedor">
+        {% block caja %} 
+        <div class="caja">
+            <i class="fa-solid fa-laptop-code"></i>
+            <div class="user">
+                <h3>artificial intelligence engineer</h3>
+                <div class="comentarios">
+                    Python, R y C++.
+                </div>
+                <div class="comentarios">
+                    Especialidad en IA
+                </div>
+                <div class="comentarios">
+                    Manejo de ingles, Trabajo en equipo, Comunicaciones, Puntual, Innovador
+                </div>
+                <div class="comentarios">
+                    $7,000 USD
+                </div>
+            </div>
+            <div class="bottons">
+                <a href="/Iniciorec2" class="btn"><i class="fa-solid fa-badge-check"></i>Eliminar</a>
+            </div>
+        </div>
+        {% endblock %} 
+        <div class="caja">
+            <i class="fa-solid fa-laptop-code"></i>
+            <div class="user">
+                <h3>computer engineer</h3>
+                <div class="comentarios">
+                    Java, C#, C.
+                </div>
+                <div class="comentarios">
+                    Especialidad en Mobile
+                </div>
+                <div class="comentarios">
+                    Manejo de ingles, Trabajo en equipo, Comunicaciones, Puntual, Innovador
+                </div>
+                <div class="comentarios">
+                    $9,000 USD
+                </div>
+            </div>
+            <div class="bottons">
+                <a href="/" class="btn"><i class="fa-solid fa-badge-check"></i>Eliminar</a>
+            </div>
+        </div>
+        <div class="caja">
+            <i class="fa-solid fa-laptop-code"></i>
+            <div class="user">
+                <h3>telematics engineer</h3>
+                <div class="comentarios">
+                    JAVASCRIPT, python, R y C++.
+                </div>
+                <div class="comentarios">
+                    Especialidad en Machine learning
+                </div>
+                <div class="comentarios">
+                    Manejo de ingles, Trabajo en equipo, Comunicaciones, Puntual, Innovador
+                </div>
+                <div class="comentarios">
+                    $12,000 USD
+                </div>
+            </div>
+            <div class="bottons">
+                <a href="/" class="btn"><i class="fa-solid fa-badge-check"></i>Eliminar</a>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

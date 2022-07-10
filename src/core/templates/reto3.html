@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block title %} CodexBook {% endblock %}
+
+{% block content %}
+<section class="reto" id="reto">
+    <div class="image">
+        <!-- <img src="img/code.jpg" alt=""> -->
+        <img src="{{url_for('static', filename='img/code.jpg')}}" alt=""> 
+    </div>
+    <form action="">
+        <h1 class="heading">Contesta las siguientes preguntas</h1>
+        <div class="inputcaja">
+            <input type="text" disabled>
+            <h1>Realiza con condiciones while un detector de numeros palindromos de 5 digitos</h1>
+        </div>
+        <div class="inputcaja">
+            <textarea required name="" id="" cols="30" rows="10"></textarea>
+            <label for="">Codigo</label>
+        </div>
+        <div class="inputcaja">
+            <input type="text" disabled>
+            <h1>Realiza con recursividad un detector de numeros palindromos de 5 digitos</h1>
+        </div>
+        <div class="inputcaja">
+            <textarea required name="" id="" cols="30" rows="10"></textarea>
+            <label for="">Codigo</label>
+        </div>
+        <div class="bottons">
+            <a href="/answer" class="btn"><i class="fa-solid fa-badge-check"></i>Enviar</a>
+        </div>
+    </form>
+</section>
+{% endblock %}

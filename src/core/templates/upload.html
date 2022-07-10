@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block title %} CodexBook {% endblock %}
+
+{% block content %}
+<section class="reto" id="reto">
+    <div class="image">
+        <!-- <img src="img/cv.jpg" alt=""> -->
+        <img src="{{url_for('static', filename='img/cv.jpg')}}" alt=""> 
+    </div>
+    <form action="">
+        <h1 class="heading">Compartenos tu CV</h1>
+        <div class="inputcaja">
+            <input type="text" disabled>
+            <label for="">Al subir tu CV nuestra IA podra darte mejores recomendaciones de trabajos que se adapten a tu perfil</label>
+        </div>
+        <section class="informacion" id="informacion">
+            <h4 class="heading">Subir</h4>
+            <h2>Subir en formato PDF</h2>
+            <div class="caja-contenedor">
+                <div class="caja">
+                    <div class="bottons">
+                        <input type="file" class="btn" name="" id="" accept="application/pdf"/>
+                    </div>
+                </div>
+                <div class="bottons">
+                    <a href="/cv" class="btn"><i class="fa-solid fa-badge-check"></i>Ver CV</a>
+                </div>
+            </div>
+        </section>
+    </form>
+</section>
+{% endblock %}

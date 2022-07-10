@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+{% block title %} CodexBook {% endblock %}
+
+{% block content %}
+<section class="reto" id="reto">
+    <div class="image">
+        <!-- <img src="img/code.jpg" alt=""> -->
+        <img src="{{url_for('static', filename='img/code.jpg')}}" alt=""> 
+    </div>
+    <form action="">
+        <h1 class="heading">Slecciona lenguaje</h1>
+        <div class="inputcaja">
+            <h1>Para incluir una biblioteca en c++ se utiliza la siguiente sentencia:</h1>
+            <select name="lenguaje">
+                <option selected="true" disabled="disabled">seleccione respuesta</option>
+                <option># include (stdlib)</option> 
+                <option> # include [stdlib] </option>
+                <option> cin >> variable1;</option>
+            </select>
+        </div>
+        <div class="inputcaja">
+            <input type="text" disabled>
+        </div>
+        <div class="inputcaja">
+            <h1>La sentencia cin >> var1, se utiliza para ingresar un valor a una variable desde teclado...</h1>
+            <select name="lenguaje">
+                <option selected="true" disabled="disabled">seleccione respuesta</option>
+                <option>Verdadero</option> 
+                <option>Falso </option>
+            </select>
+        </div>
+        <div class="inputcaja">
+            <input type="text" disabled>
+        </div>
+        <div class="inputcaja">
+            <h1>La definición de una variable se realiza de la siguiente manera:</h1>
+            <select name="lenguaje">
+                <option selected="true" disabled="disabled">seleccione respuesta</option>
+                <option>include variable1;</option> 
+                <option>const int variable1=25; </option>
+                <option>int variable1=25;</option>
+            </select>
+        </div>
+        <div class="inputcaja">
+            <input type="text" disabled>
+        </div>
+        <div class="inputcaja">
+            <h1>"Un código en C++ debe pasar por los procesos de Compilación y Ejecución"</h1>
+            <select name="lenguaje">
+                <option selected="true" disabled="disabled">seleccione respuesta</option>
+                <option>Verdadero</option> 
+                <option>Falso</option>
+            </select>
+        </div>
+        <div class="inputcaja">
+            <input type="text" disabled>
+        </div>
+        <div class="bottons">
+            <a href="/reto3" class="btn"><i class="fa-solid fa-badge-check"></i>Siguiente</a>
+        </div>
+    </form>
+</section>
+{% endblock %}

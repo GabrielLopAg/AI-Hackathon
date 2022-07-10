@@ -1,0 +1,173 @@
+{% extends "base.html" %}
+{% block title %} Home {% endblock %}
+
+{% block navbar %} 
+<nav class="navbar">
+    <a href="#inicio">inicio</a>
+    <a href="#informacion">ranking</a>
+    <a href="#ranking">prueba</a>
+    <a href="#prueba">comentarios</a>
+    <!--Cambio-->
+    <a href="/profile">Mi perfil</a>
+    <!--Cambio-->
+    <a href="/general">Cerrar sesion</a>
+</nav>      
+{% endblock %}
+
+{% block content %}
+
+<section class="inicio" id="inicio">
+    <div class="content">
+        <h3>Bienvenido a CodexBook<span> Los mas top</span></h3>
+        <p>
+            Holitaaaa
+        </p>
+        <a href="#ranking" class="btn">Mas detalles</a>
+    </div>
+    <div class="image">
+    <!-- <img src="img/dino.png" alt=""> -->
+    <img src="{{url_for('static', filename='img/dino.png')}}" alt="">
+    </div>
+</section>
+<section class="informacion" id="informacion">
+    <h1 class="heading">Top de los mejores lenguajes</h1>
+    <div class="caja-contenedor">
+        <div class="caja">
+            <!-- <img src="img/icono1.png" alt=""> -->
+            <img src="{{url_for('static', filename='img/icono1.png')}}" alt="">
+            <h3>Top 1 en JAVA</h3>
+            <p>Gabriel Lopez Aguirre
+            </p>
+            <!--Cambio-->
+            <!--Agrege un div y lo de dentro del div-->
+            <div class="bottons">
+                <a href="/ranking" class="btn"><i class="fa-solid fa-code"></i> Ver ranking</a>
+            </div>
+        </div>
+        <div class="caja">
+            <!-- <img src="img/icono2.png" alt=""> -->
+            <img src="{{url_for('static', filename='img/icono2.png')}}" alt="">
+            <h3>Top 1 en PYTHON</h3>
+            <p>Uriel Badillo Garrido
+            </p>
+            <!--Cambio-->
+            <!--Agrege un div y lo de dentro del div-->
+            <div class="bottons">
+                <a href="/python" class="btn"><i class="fa-solid fa-code"></i> Ver ranking</a>
+            </div>
+        </div>
+        <div class="caja">
+            <!-- <img src="img/icono3.png" alt=""> -->
+            <img src="{{url_for('static', filename='img/icono3.png')}}" alt="">
+            <h3>Top 1 en JAVASCRIPT</h3>
+            <p>Marifer Lopez
+            </p>
+            <!--Cambio-->
+            <!--Agrege un div y lo de dentro del div-->
+            <div class="bottons">
+                <a href="/javascript" class="btn"><i class="fa-solid fa-code"></i> Ver ranking</a>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="ranking" id="ranking">
+    <h1 class="heading">Realiza una prueba con nosotros y consigue trabajo</h1>
+    <div class="columna">
+        <div class="image">
+            <!-- <img src="img/dino.png" alt=""> -->
+            <img src="{{url_for('static', filename='img/dino.png')}}" alt="">
+        </div>
+        <div class="content">
+            <h3>¿En que consiste?</h3>
+            <p>
+                Se realiza una prueba la cual tendrá que tener opciones de entrada y las salidas
+                que tenga seran evaludas por nuestros expertos.
+            </p>
+            <p>
+                Al finalizar nuestras pruebas y entregarte tu nivel, te mostraremos las empresas que
+                tienen intereses en personas con tus habilidades y tendras la opcion de mandar tu CV.
+            </p>
+            <div class="bottons">
+                <a href="/reto" class="btn"><i class="fa-solid fa-code"></i> Realizar prueba</a>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="prueba" id="prueba">
+    <h1 class="heading">comentarios de los mejores programadores</h1>
+    <div class="caja-contenedor">
+        <div class="caja">
+
+            <!--Cambie de ser un ranking a comentarios de los usuarios-->
+
+            <i class="fa-solid fa-laptop-code"></i>
+            <div class="user">
+                <!-- <img src="img/icono1.png" alt=""> -->
+                <img src="{{url_for('static', filename='img/icono1.png')}}" alt="">
+                <h3>Uriel</h3>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="comentarios">
+                    Me parece una plataforma excelente para ver el nivel de tus habílidades y así ver en que puedo mejorar, me 
+                    gusto bastante el que me puedan recomentar los puestos para los que mas en cajo 
+                </div>
+            </div>
+        </div>
+
+        <!--Cambie de ser un ranking a comentarios de los usuarios-->
+
+        <div class="caja">
+            <i class="fa-solid fa-laptop-code"></i>
+            <div class="user">
+                <!-- <img src="img/icono2.png" alt=""> -->
+                <img src="{{url_for('static', filename='img/icono2.png')}}" alt="">
+                <h3>Gabriel</h3>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="comentarios">
+                    Me parece una plataforma excelente para ver el nivel de tus habílidades y así ver en que puedo mejorar, me 
+                    gusto bastante el que me puedan recomentar los puestos para los que mas en cajo 
+                </div>
+            </div>
+        </div>
+
+        <!--Cambie de ser un ranking a comentarios de los usuarios-->
+
+        <div class="caja">
+            <i class="fa-solid fa-laptop-code"></i>
+            <div class="user">
+                <!-- <img src="img/icono3.png" alt=""> -->
+                <img src="{{url_for('static', filename='img/icono3.png')}}" alt="">
+                <h3>Marifer</h3>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="comentarios">
+                    Me parece una plataforma excelente para ver el nivel de tus habílidades y así ver en que puedo mejorar, me 
+                    gusto bastante el que me puedan recomentar los puestos para los que mas en cajo 
+                </div>
+            </div>
+        </div>
+        <!--Cambio-->
+        <!--Cambio-->
+        <!--Cambio-->
+        <!--Cambio-->
+        <!--Cambio-->
+        <!--Elimine boton-->
+    </div>
+</section>
+{% endblock %}

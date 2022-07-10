@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block title %} CodexBook {% endblock %}
+
+{% block nav %}
+<nav class="navbar">
+    <a href="/general">inicio</a>
+</nav>
+{% endblock %}
+
+{% block content %}
+<section class="reto" id="reto">
+    <form action="">
+        <h1 class="heading">Ingresa tus datos</h1>
+        <div class="inputcaja">
+            <input type="text" required>
+            <label for="">Nombre</label>
+        </div>
+        <div class="inputcaja">
+            <input type="text" required>
+            <label for="">correo</label>
+        </div>
+        <div class="inputcaja">
+            <input type="text" required>
+            <label for="">Carrera</label>
+        </div>
+        <div class="inputcaja">
+            <input type="text" required>
+            <label for="">Contraseña</label>
+        </div>
+        <div class="bottons">
+            <a href="/" class="btn"><i class="fa-solid fa-badge-check"></i>Enviar</a>
+        </div>
+    </form>
+</section>
+{% endblock %}
